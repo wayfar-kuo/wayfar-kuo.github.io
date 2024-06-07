@@ -372,10 +372,10 @@
   },
   {
     "word": "discharge",
-    "pronunciation": "dIs't∫ard3",
-    "mean": "v.放电;卸掉负担;发射;卸(货);使爆炸;履行;解雇;允许...离开;排出,放出;清偿(债务)(读作",
-    "help": "dIs't∫ard3",
-    "contributor": ")n.发射;释放;解雇;放电(读作"
+    "pronunciation": "dis't∫ard3",
+    "mean": "v.放电;排出,放出;清偿(债务)(读作/dis't∫ard3/)n.发射;释放;解雇;放电(读作/dIst∫ard3/)",
+    "help": "助记dis不，否定前缀+charge指控，管→不指控，不管→discharge释放",
+    "contributor": "guoweiyan20240602"
   },
   {
     "word": "dispatch",
@@ -485,9 +485,9 @@
   {
     "word": "escort",
     "pronunciation": "I'skort,eskort",
-    "mean": "v.护送(读作",
-    "help": "rskort",
-    "contributor": ")n.护送者(读作eskort)"
+    "mean": "v.护送(读作rskort)n.护送者(读作eskort)",
+    "help": "es=ex出来，向外+cort调整好，校正-外出途中的保护-escort护送",
+    "contributor": "guoweiyan20240528"
   },
   {
     "word": "ethics",
@@ -752,7 +752,7 @@
     "word": "inferior",
     "pronunciation": "ɪnˈfɪəriə(r)",
     "mean": "adj.差的，次的;n地位低下，部下，次品",
-    "help": "一废人啊，在一群人中差的",
+    "help": "\"一废人\"啊，在一群人中差的",
     "contributor": "guoweiyan20240521"
   },
   {
@@ -982,9 +982,9 @@
   {
     "word": "overlap",
     "pronunciation": "'ouvar,laep,ouvarlp",
-    "mean": "n.重叠,重复(读作",
-    "help": "ouvarlap",
-    "contributor": ")v.(部分地)重叠(读ouvar'laep"
+    "mean": "n.重叠,重复(读作ouvarlap)v.(部分地)重叠(读ouvar'laep)",
+    "help": "助记over在上+lap折叠→叠在上面→overlap重叠",
+    "contributor": "guoweiyan20240529"
   },
   {
     "word": "paleontology",
