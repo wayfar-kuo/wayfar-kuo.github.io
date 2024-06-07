@@ -2,7 +2,7 @@
 <html lang="en">  
 <head>  
     <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta word="viewport" content="width=device-width, initial-scale=1.0">  
     <title>巧记英语单词</title>  
     <style>  
         body {  
@@ -40,6 +40,7 @@
             <th>发音</th>  
             <th>含义</th> 
             <th>助记</th>
+            <th>贡献者</th>
         </tr>  
     </table>  
       
@@ -56,16 +57,18 @@
             // 遍历JSON数据并添加行  
             data.forEach(item => {  
                 const row = table.insertRow(-1); // 在表格末尾插入新行  
-                const nameCell = row.insertCell(0); // 在新行中插入单元格  
-                const ageCell = row.insertCell(1);  
-                const cityCell = row.insertCell(2);  
+                const wordCell = row.insertCell(0); // 在新行中插入单元格  
+                const pronunciationCell = row.insertCell(1);  
+                const meanCell = row.insertCell(2);  
                 const helpCell = row.insertCell(3);
+                const contributorCell = row.insertCell(4);
       
                 // 设置单元格内容  
-                nameCell.textContent = item.name;  
-                ageCell.textContent = item.age;  
-                cityCell.textContent = item.city; 
+                wordCell.textContent = item.word;  
+                pronunciationCell.textContent = item.pronunciation;  
+                meanCell.textContent = item.mean; 
                 helpCell.textContent = item.help;
+                contributorCell.textContent = item.contributor;
             });  
         })  
         .catch(error => console.error('Error:', error)); // 处理错误  
