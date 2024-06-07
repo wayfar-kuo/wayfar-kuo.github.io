@@ -38,7 +38,8 @@
         <tr>  
             <th>姓名</th>  
             <th>年龄</th>  
-            <th>城市</th>  
+            <th>城市</th> 
+            <th>助记</th>
         </tr>  
     </table>  
       
@@ -58,11 +59,13 @@
                 const nameCell = row.insertCell(0); // 在新行中插入单元格  
                 const ageCell = row.insertCell(1);  
                 const cityCell = row.insertCell(2);  
+                const helpCell = row.insertCell(3);
       
                 // 设置单元格内容  
                 nameCell.textContent = item.name;  
                 ageCell.textContent = item.age;  
-                cityCell.textContent = item.city;  
+                cityCell.textContent = item.city; 
+                helpCell.textContent = item.help;
             });  
         })  
         .catch(error => console.error('Error:', error)); // 处理错误  
