@@ -30,11 +30,24 @@
             padding: 20px;  
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
         }  
+        #data-table {  
+            border-collapse: collapse; /* 合并相邻的边框 */  
+            width: 100%; /* 可选：设置表格宽度 */  
+        }  
+  
+        #data-table, #data-table th, #data-table td {  
+            border: 1px solid black; /* 设置边框样式 */  
+        }  
+  
+        #data-table th, #data-table td {  
+            padding: 8px; /* 设置单元格内边距 */  
+            text-align: left; /* 设置文本对齐方式 */  
+        } 
     </style>  
 </head>  
 <body>  
 <div class="container">  
-    <table align ="center" id="data-table">  
+    <table id="data-table">  
         <tr>  
             <th>单词</th>  
             <th>发音</th>  
