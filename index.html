@@ -3,48 +3,43 @@
 <head>  
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>简单介绍页面</title>  
-    <style>  
-        body {  
-            font-family: Arial, sans-serif;  
-            margin: 0;  
-            padding: 20px;  
-            background-color: #f0f0f0;  
-        }  
-  
-        h1 {  
-            color: #333;  
-            text-align: center;  
-        }  
-  
-        p {  
-            color: #666;  
-            line-height: 1.6;  
-            margin-bottom: 15px;  
-        }  
-  
-        .container {  
-            max-width: 800px;  
-            margin: 0 auto;  
-            background-color: #fff;  
-            padding: 20px;  
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
-        }  
-    </style>  
+    <title>从JSON获取数据显示为表格</title>  
 </head>  
 <body>  
   
-<div class="container">  
-    <h1>欢迎来到简单介绍页面</h1>  
+<table id="data-table">  
+    <tr>  
+        <th>姓名</th>  
+        <th>年龄</th>  
+        <th>城市</th>  
+    </tr>  
+</table>  
   
-    <p>这是一个简单的介绍页面示例，用于展示基本的HTML和CSS知识。</p>  
+<script>  
+// 假设你的JSON数据URL是'data.json'  
+const dataUrl = 'data.json';  
   
-    <p>您可以在这里添加关于您自己、您的项目、您的公司或任何其他内容的详细信息。</p>  
+fetch(dataUrl)  
+    .then(response => response.json()) // 解析JSON  
+    .then(data => {  
+        // 获取表格元素  
+        const table = document.getElementById('data-table');  
   
-    <p>通过使用HTML标签和CSS样式，您可以创建出丰富多样的网页内容。</p>  
+        // 遍历JSON数据并添加行  
+        data.forEach(item => {  
+            const row = table.insertRow(-1); // 在表格末尾插入新行  
+            const nameCell = row.insertCell(0); // 在新行中插入单元格  
+            const ageCell = row.insertCell(1);  
+            const cityCell = row.insertCell(2);  
   
-    <p>希望这个简单的介绍页面能够对您有所帮助！</p>  
-</div>  
+            // 设置单元格内容  
+            nameCell.textContent = item.name;  
+            ageCell.textContent = item.age;  
+            cityCell.textContent = item.city;  
+        });  
+    })  
+    .catch(error => console.error('Error:', error)); // 处理错误  
+</script>  
   
 </body>  
 </html>
