@@ -1,0 +1,102 @@
+
+/* 样式化按钮 */  
+
+button.accordion {  
+    background-color: #eee;  
+    color: #444;  
+    cursor: pointer;  
+    padding: 18px;  
+    width: 100%;  
+    border: none;  
+    text-align: left;  
+    outline: none;  
+    font-size: 15px;  
+    transition: 0.4s;  
+
+}  
+
+    
+
+/* 添加一些鼠标悬停效果 */  
+
+button.accordion:hover {  
+
+    background-color: #ddd;  
+
+}  
+
+    
+
+/* 面板的默认样式 */  
+
+div.panel {  
+
+    padding: 0 18px;  
+
+    background-color: white;  
+
+    max-height: 0;  
+
+    overflow: hidden;  
+
+    transition: max-height 0.2s ease-out;  
+
+}
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 20px;  
+    background-color: #f0f0f0;  
+}  
+
+h1 {  
+    color: #333;  
+    text-align: center;  
+}  
+
+p {  
+    color: #666;  
+    line-height: 1.6;  
+    margin-bottom: 15px;  
+}  
+
+.container {  
+    position: relative;
+    top: 10px;
+    max-width: 90%;  
+    margin: 0 auto;  
+    background-color: #fff;  
+    padding: 20px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}  
+#data-table {  
+    border-collapse: collapse; /* 合并相邻的边框 */  
+    width: 100%; /* 可选：设置表格宽度 */  
+}  
+
+#data-table, #data-table th, #data-table td {  
+    border: 1px solid black; /* 设置边框样式 */  
+}  
+
+#data-table th, #data-table td {  
+    padding: 8px; /* 设置单元格内边距 */  
+    text-align: left; /* 设置文本对齐方式 */  
+} 
+
+/* 隐藏div */  
+
+.hidden {  
+
+    display: none;  
+
+}  
+
+    
+
+/* 显示div */  
+
+.visible {  
+
+    display: block; /* 或者使用其他适合的值，如inline, inline-block等 */  
+
+}
