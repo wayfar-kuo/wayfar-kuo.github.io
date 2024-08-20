@@ -1,91 +1,15 @@
+
 <!DOCTYPE html>  
-<html lang="en">  
+<html>  
 <head>  
-    <meta charset="UTF-8">  
-    <meta word="viewport" content="width=device-width, initial-scale=1.0">  
     <title>巧记英语单词</title>  
-    <style>  
-        body {  
-            font-family: Arial, sans-serif;  
-            margin: 0;  
-            padding: 20px;  
-            background-color: #f0f0f0;  
-        }  
-  
-        h1 {  
-            color: #333;  
-            text-align: center;  
-        }  
-  
-        p {  
-            color: #666;  
-            line-height: 1.6;  
-            margin-bottom: 15px;  
-        }  
-  
-        .container {  
-            max-width: 90%;  
-            margin: 0 auto;  
-            background-color: #fff;  
-            padding: 20px;  
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
-        }  
-        #data-table {  
-            border-collapse: collapse; /* 合并相邻的边框 */  
-            width: 100%; /* 可选：设置表格宽度 */  
-        }  
-  
-        #data-table, #data-table th, #data-table td {  
-            border: 1px solid black; /* 设置边框样式 */  
-        }  
-  
-        #data-table th, #data-table td {  
-            padding: 8px; /* 设置单元格内边距 */  
-            text-align: left; /* 设置文本对齐方式 */  
-        } 
-    </style>  
 </head>  
 <body>  
-<div class="container">  
-    <table id="data-table">  
-        <tr>  
-            <th>单词</th>  
-            <th>发音</th>  
-            <th>含义</th> 
-            <th>助记</th>
-            <th>贡献者</th>
-        </tr>  
-    </table>  
-      
-    <script>  
-    // 假设你的JSON数据URL是'data.json'  
-    const dataUrl = 'data.json';  
-      
-    fetch(dataUrl)  
-        .then(response => response.json()) // 解析JSON  
-        .then(data => {  
-            // 获取表格元素  
-            const table = document.getElementById('data-table');  
-      
-            // 遍历JSON数据并添加行  
-            data.forEach(item => {  
-                const row = table.insertRow(-1); // 在表格末尾插入新行  
-                const wordCell = row.insertCell(0); // 在新行中插入单元格  
-                const pronunciationCell = row.insertCell(1);  
-                const meanCell = row.insertCell(2);  
-                const helpCell = row.insertCell(3);
-                const contributorCell = row.insertCell(4);
-      
-                // 设置单元格内容  
-                wordCell.textContent = item.word;  
-                pronunciationCell.textContent = item.pronunciation;  
-                meanCell.textContent = item.mean; 
-                helpCell.textContent = item.help;
-                contributorCell.textContent = item.contributor;
-            });  
-        })  
-        .catch(error => console.error('Error:', error)); // 处理错误  
-    </script>  
-</div>
+
+    
+<div>本站点用于帮助记忆中小学英语单词，输入正确口令后可使用！</div>
+<input type="number" id="ageInput" placeholder="口令">  
+<button onclick="redirectBasedOnAge()">提交</button>  
+<script src="index.js">  </script>  
 </body>  
 </html>
